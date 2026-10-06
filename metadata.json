@@ -1,0 +1,6 @@
+{
+  "name": "Jess Pristine — Modern Luxury Cleaning & Space Reset",
+  "description": "Bespoke residential, deep reset, and post-renovation cleaning by Jess Pristine (@jess_pristine). Featuring interactive 3D space inspection, instant service bookings, and client transformations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
