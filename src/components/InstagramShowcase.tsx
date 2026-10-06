@@ -151,8 +151,10 @@ export const InstagramShowcase: React.FC = () => {
                 <img
                   src={post.image}
                   alt={post.title}
+                  loading="eager"
+                  decoding="async"
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 bg-neutral-200"
                 />
 
                 {/* Video Play Pill if Reel */}
@@ -186,25 +188,6 @@ export const InstagramShowcase: React.FC = () => {
               </div>
             );
           })}
-        </div>
-
-        {/* Feed Stats Banner */}
-        <div className="mt-8 p-4 rounded-2xl bg-white border border-neutral-200 flex flex-wrap items-center justify-between gap-4 text-xs">
-          <div className="flex items-center gap-3">
-            <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="font-medium text-neutral-800">
-              Active Instagram Creator & Professional Detailer
-            </span>
-            <span className="text-neutral-400 font-mono hidden sm:inline">· Updated daily</span>
-          </div>
-
-          <div className="flex items-center gap-4 text-neutral-500 font-mono text-[11px]">
-            <span>184K Followers</span>
-            <span aria-hidden="true">·</span>
-            <span>4.9M Monthly Views</span>
-            <span aria-hidden="true">·</span>
-            <span>Verified Cleaner</span>
-          </div>
         </div>
 
       </div>

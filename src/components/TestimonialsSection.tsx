@@ -63,13 +63,6 @@ export const TestimonialsSection: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-800 mb-3">
-              <span>Client Experiences</span>
-              <span aria-hidden="true">·</span>
-              <span>100% Verified Reviews</span>
-              <span aria-hidden="true">·</span>
-              <span>5.0 Star Standard</span>
-            </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-semibold text-neutral-900 tracking-tight text-balance">
               Trusted by Architects, Designers & Discerning Homeowners
             </h2>
