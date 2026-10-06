@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fda4af" />
+      <stop offset="50%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <clipPath id="circleClip">
+      <circle cx="50" cy="50" r="38" />
+    </clipPath>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Rounded Luxury Badge & Ring -->
+  <circle cx="50" cy="50" r="48" fill="url(#bgGrad)" stroke="#ffffff" stroke-width="2.5" />
+  
+  <!-- Embedded Photo Logo -->
+  <image
+    href="https://instagram.fisb26-1.fna.fbcdn.net/v/t51.82787-19/775714816_18091254959129485_3295707361899043185_n.jpg?stp=dst-jpg_s150x150_tt6&amp;nc_cat=102&amp;nc_map=urlgen_bucketless&amp;ccb=7-5&amp;nc_sid=f7ccc5&amp;efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDU3LkMzIn0%3D&amp;nc_ohc=y4_SpUtl4uAQ7kNvwE6vfvc&amp;nc_oc=AdpuXJN8cSajWE_fM_CdKT2zO5Q_txUzkibI8hjBHwr5-LO_xzZnN3W_pcKr-vSHngc&amp;nc_zt=24&amp;nc_ht=instagram.fisb26-1.fna&amp;nc_gid=pyYqnP3eNr3bnhFLVEOTPw&amp;nc_ss=7baaf&amp;oh=00_AQPeNBfVw_bhrvsQAPPmQE6v2ZSFSnRa8ifQsRHsmnlHOg&amp;oe=6ACAB0BE"
+    x="12"
+    y="12"
+    width="76"
+    height="76"
+    clip-path="url(#circleClip)"
+    preserveAspectRatio="xMidYMid slice"
+  />
+  
+  <!-- Inner Ring Accent -->
+  <circle cx="50" cy="50" r="38" fill="none" stroke="#ffffff" stroke-width="2" />
+  
+  <!-- Verified Sparkle Badge Bottom Right -->
+  <circle cx="78" cy="78" r="14" fill="#e11d48" stroke="#ffffff" stroke-width="2" />
+  <path d="M78 70 Q 78 78 86 78 Q 78 78 78 86 Q 78 78 70 78 Q 78 78 78 70 Z" fill="#ffffff" filter="url(#glow)" />
+</svg>
