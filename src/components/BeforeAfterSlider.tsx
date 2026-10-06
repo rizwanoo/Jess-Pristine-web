@@ -17,7 +17,7 @@ const TRANSFORMATIONS: TransformationCase[] = [
   {
     id: 'kitchen',
     title: 'Chef’s Gourmet Kitchen & Quartz Restoration',
-    category: 'Deep Culinary Sanitation',
+    category: 'Gourmet Kitchen',
     image: kitchenImg,
     beforeNotes: [
       'Grease residue on backsplash and extractor vent',
@@ -29,12 +29,12 @@ const TRANSFORMATIONS: TransformationCase[] = [
       'Micro-buffed mirror finish on all faucet fixtures',
       'Aromatherapy organic botanical sealed countertops'
     ],
-    specs: '4.5 Hours · Surgical Kitchen Reset'
+    specs: ''
   },
   {
     id: 'bathroom',
     title: 'Master Spa Suite & Frameless Glass Decalcification',
-    category: 'Mineral & Grout Detailing',
+    category: 'Master Spa Suite',
     image: bathroomImg,
     beforeNotes: [
       'Heavy calcium limescale haze on glass enclosure',
@@ -46,7 +46,7 @@ const TRANSFORMATIONS: TransformationCase[] = [
       'Steam-sanitized grout at 220°F without harsh bleach',
       'Hotel-folded organic waffle towels and fresh eucalyptus'
     ],
-    specs: '3.0 Hours · Spa Revival Treatment'
+    specs: ''
   }
 ];
 
@@ -201,13 +201,6 @@ export const BeforeAfterSlider: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-neutral-500 mb-3">
-              <span>Verified Portfolios</span>
-              <span aria-hidden="true">·</span>
-              <span>Before & After Case Studies</span>
-              <span aria-hidden="true">·</span>
-              <span>100% Unfiltered</span>
-            </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-semibold text-neutral-900 tracking-tight text-balance">
               The Pristine Standard: Before & After
             </h2>
@@ -276,6 +269,8 @@ export const BeforeAfterSlider: React.FC = () => {
               <img
                 src={activeCase.image}
                 alt={activeCase.title}
+                loading="eager"
+                decoding="async"
                 referrerPolicy="no-referrer"
                 className="absolute inset-0 w-full h-full object-cover pointer-events-none"
               />
@@ -290,6 +285,8 @@ export const BeforeAfterSlider: React.FC = () => {
                     <img
                       src={activeCase.image}
                       alt="Before cleaning"
+                      loading="eager"
+                      decoding="async"
                       referrerPolicy="no-referrer"
                       className="absolute inset-0 w-full h-full object-cover filter contrast-75 brightness-75 sepia-[0.35] blur-[0.4px]"
                     />
@@ -342,20 +339,12 @@ export const BeforeAfterSlider: React.FC = () => {
                 </>
               )}
             </div>
-
-            <div className="mt-3 flex items-center justify-between text-xs text-neutral-500 font-mono">
-              <span>{activeCase.specs}</span>
-              <span>Natural sunlight illumination · No artificial enhancement</span>
-            </div>
           </div>
 
           {/* Transformation Detail Cards (4 Cols) */}
           <div className="lg:col-span-4 flex flex-col gap-6">
             <div className="bg-[#faf9f6] p-6 rounded-3xl border border-neutral-200">
-              <span className="text-xs font-mono uppercase tracking-wider text-neutral-500">
-                {activeCase.category}
-              </span>
-              <h3 className="text-xl font-display font-semibold text-neutral-900 mt-1 mb-4">
+              <h3 className="text-xl font-display font-semibold text-neutral-900 mb-4">
                 {activeCase.title}
               </h3>
 

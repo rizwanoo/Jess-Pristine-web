@@ -416,6 +416,8 @@ export const ThreeRoomInspector: React.FC = () => {
               <img
                 src={partitionImgSrc}
                 alt="Open living room with partition design"
+                loading="eager"
+                decoding="async"
                 referrerPolicy="no-referrer"
                 onError={() => setPartitionImgSrc(ASSETS.DESIGN_CAFE_FALLBACK)}
                 className={`w-full h-full object-cover transition-all duration-500 ${

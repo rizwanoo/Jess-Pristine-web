@@ -229,6 +229,8 @@ export const AiChatbot: React.FC<AiChatbotProps> = ({ onApplyBookingQuote }) => 
               <img
                 src={avatarSrc}
                 alt="Jess Pristine"
+                loading="eager"
+                decoding="async"
                 referrerPolicy="no-referrer"
                 onError={() => setAvatarSrc(ASSETS.JESS_AVATAR_FALLBACK)}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
@@ -268,6 +270,8 @@ export const AiChatbot: React.FC<AiChatbotProps> = ({ onApplyBookingQuote }) => 
                 <img
                   src={avatarSrc}
                   alt="Jessie"
+                  loading="eager"
+                  decoding="async"
                   referrerPolicy="no-referrer"
                   onError={() => setAvatarSrc(ASSETS.JESS_AVATAR_FALLBACK)}
                   className="w-full h-full rounded-full object-cover bg-white"

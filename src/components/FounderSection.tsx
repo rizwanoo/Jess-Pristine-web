@@ -16,6 +16,8 @@ export const FounderSection: React.FC = () => {
               <img
                 src={founderImg}
                 alt="Jessica, Founder of Jess Pristine"
+                loading="eager"
+                decoding="async"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
               />
@@ -37,6 +39,8 @@ export const FounderSection: React.FC = () => {
               <img
                 src={toolsImg}
                 alt="Organic cleaning tools"
+                loading="eager"
+                decoding="async"
                 referrerPolicy="no-referrer"
                 className="w-full h-24 object-cover rounded-xl mb-2"
               />

@@ -22,10 +22,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenChat }) => {
   return (
     <section className="relative min-h-[640px] lg:min-h-[720px] flex items-center overflow-hidden bg-neutral-950 text-white">
       {/* FULL LUXURY BACKGROUND IMAGE */}
-      <div className="absolute inset-0 z-0 select-none">
+      <div className="absolute inset-0 z-0 select-none bg-neutral-900">
         <img
           src={heroImg}
           alt="Pristine luxury penthouse interior by Jess Pristine"
+          loading="eager"
+          decoding="async"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover scale-105 filter brightness-90 animate-shimmer"
           style={{ animationDuration: '8s' }}
@@ -48,10 +50,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenChat }) => {
             
             {/* Top Luxury Kicker Badge */}
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg animate-in fade-in slide-in-from-bottom-2 duration-500">
-              <div className="relative w-6 h-6 rounded-full overflow-hidden ring-1 ring-pink-400 p-0.5">
+              <div className="relative w-6 h-6 rounded-full overflow-hidden ring-1 ring-pink-400 p-0.5 bg-neutral-800">
                 <img
                   src={avatarSrc}
                   alt="Jess"
+                  loading="eager"
+                  decoding="async"
                   referrerPolicy="no-referrer"
                   onError={() => setAvatarSrc(ASSETS.JESS_AVATAR_FALLBACK)}
                   className="w-full h-full rounded-full object-cover"
